@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(241, 245, 253);
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2px;
+    margin: 20%;
+}
+
+h1 {
+    margin-bottom: 2vh;
+    color: rgb(49, 113, 165);
+    font-weight: 700;
+}
+
+.container {
+    background-color: rgb(186, 233, 245);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;
+    margin: 10vh auto; /* Center the container vertically and horizontally */
+    max-width: 400px; /* Optional: Limit the maximum width of the container */
+}
+
+::placeholder {
+    color: white;
+}
+
+input {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    background-color: rgb(49, 113, 165);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 3px;
+}
+
+input:hover {
+    background-color: rgba(7, 97, 170, 0.637);
+}
+
+.oddoreven {
+    margin-top: 10px;
+    color: rgb(49, 113, 165);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.button {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 3px;
+    color: white;
+    background-color: rgb(49, 113, 165);
+}
+
+.button:hover {
+    background-color: rgba(7, 97, 170, 0.637);
+}
+
+/* Media query for screens smaller than 600px (typical smartphones) */
+@media (max-width: 600px) {
+    body {
+        margin: 5vh auto;
+        margin-top: 200px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input,
+    .button {
+        font-size: 14px;
+    }
+
+    .oddoreven {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 724px) {
+    body {
+        margin: 5vh auto;
+        margin-top: 350px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input,
+    .button {
+        font-size: 14px;
+    }
+
+    .oddoreven {
+        font-size: 20px;
+    }
+}
